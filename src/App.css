@@ -32,7 +32,106 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.page-bg {
+  background-attachment: fixed;
+  background-image: url(./images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.form-group {
+  margin: 0 0 30px;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  padding-left: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.img-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-icon {
+  background-color: #3e3e3e;
+  border: 0 none;
+  border-radius: 4px 0 0 4px;
+  color: #fff;
+  display: table-cell;
+  font-size: 14px;
+  height: 100%;
+  padding: 8px 7px;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 40px;
+  position: absolute;
+  top: 0;
+}
+
+#btn-disable {
+  pointer-events: none;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 6px 20px;
+  background-color: transparent;
+  border: 1px solid #3e3e3e;
+  text-transform: capitalize;
+}
+
+#next-btn {
+  overflow: hidden;
+  font-size: 16px;
+  padding: 6px 19px;
+  background-color: #3e3e3e;
+  text-transform: capitalize;
+  color: white;
+}
+
+#next-btn:hover {
+  background-color: blue;
+  transition: .9s;
 }
